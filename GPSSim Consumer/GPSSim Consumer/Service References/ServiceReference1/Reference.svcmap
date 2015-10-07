@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b530cb46-c7c6-4300-96f6-eb3f0b55ac0c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/GPSSim" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GPSSim.xsd" MetadataType="Schema" ID="fb32e7a2-a423-4c02-8de1-3af7d2510b57" SourceId="1" SourceUrl="http://localhost:8000/GPSSim?xsd=xsd1" />
+    <MetadataFile FileName="GPSSim.wsdl" MetadataType="Wsdl" ID="3660de4a-8618-435e-afa8-337a6696bb7c" SourceId="1" SourceUrl="http://localhost:8000/GPSSim?wsdl" />
+    <MetadataFile FileName="GPSSim1.xsd" MetadataType="Schema" ID="e5f6bf02-c4d5-4266-99e2-26b678ad411b" SourceId="1" SourceUrl="http://localhost:8000/GPSSim?xsd=xsd2" />
+    <MetadataFile FileName="GPSSim.disco" MetadataType="Disco" ID="b9ba289e-3673-4dfb-a26a-dd9a10bee7fd" SourceId="1" SourceUrl="http://localhost:8000/GPSSim?disco" />
+    <MetadataFile FileName="GPSSim2.xsd" MetadataType="Schema" ID="270c456f-2974-4ed6-802a-815074547db2" SourceId="1" SourceUrl="http://localhost:8000/GPSSim?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>MouseOver retrieving location</title>
+ <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3" type="text/javascript"></script>
+ <script type="text/javascript">
+  var map = null;
+
+  function getMap() {
+   map = new VEMap("divMap");
+   map.onLoadMap = function() { map.AttachEvent("onmousemove", DisplayCoords); }
+   map.LoadMap();
+  }
+
+  function DisplayCoords(e) {
+   // Retrieve the pixel position of the cursor
+   var pix = new VEPixel(e.mapX, e.mapY);
+   // Convert the pixel location to latitude / longitude
+   var pos = map.PixelToLatLong(pix);
+   // Update the page to display current cursor latitude / longitude
+   document.getElementById("Latitude").value = pos.Latitude;
+   document.getElementById("Longitude").value = pos.Longitude;
+  }
+ </script>
+</head>
+<body onload="getMap();">
+ <div id="divMap" style="position: relative; width:640px; height:480px;"></div>
+ <label for="Latitude">Latitude</label><input id="Latitude" />
+ <label for="Longitude">Longitude</label><input id="Longitude" />
+</body>
+</html>

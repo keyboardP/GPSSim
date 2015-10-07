@@ -1,0 +1,18 @@
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\bin\Release\VEMap.exe
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\bin\Release\VEMap.pdb
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\VEMap.Form1.resources
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\VEMap.Properties.Resources.resources
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\VEMap.exe
+C:\Users\A A\AppData\Local\Temporary Projects\VEMap\obj\x86\Release\VEMap.pdb
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\VEMap.exe
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\VEMap.pdb
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\bin\Release\VEMap.exe
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\bin\Release\VEMap.pdb
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\VEMap.Form1.resources
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\VEMap.Properties.Resources.resources
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\A A\Documents\Visual Studio 2010\Projects\VEMap\VEMap\obj\x86\Release\GenerateResource.write.1.tlog

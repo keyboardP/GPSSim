@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"></script>
+		<script type="text/javascript">
+		    var map;
+		    var pinLayer;
+		    var pathLayer;
+		    var points = new Array();
+		    var pin = null;
+
+		    function pageLoad() 
+		    {
+		        map = new VEMap("myMap");
+		        map.LoadMap();
+		        map.EnableShapeDisplayThreshold(false);
+		        
+		        updateMapData("Map Loaded");
+		        pinLayer = new VEShapeLayer();
+		        map.AddShapeLayer(pinLayer);
+		        pathLayer = new VEShapeLayer();
+		        map.AddShapeLayer(pathLayer);
+		    }
+
+		    function AddPushpin(lat, lon, description) {
+		        var coordinate = new VELatLong(lat, lon);
+		        pin = new VEShape(VEShapeType.Pushpin, coordinate);
+		        pin.SetDescription(description);
+
+		        if (pinLayer.GetShapeCount() > 0)
+		            pinLayer.DeleteAllShapes();
+		        
+		        pinLayer.AddShape(pin);
+		        points.push(coordinate);
+		        map.SetCenter(coordinate);
+		        updateMapData("Pin added at "+lat+" "+lon);
+		    }
+
+		    function drawPath() {
+		        if (points.length > 2) {
+		            if (pathLayer.GetShapeCount() > 0)
+		                pathLayer.DeleteAllShapes();
+		                 
+		            var path = new VEShape(VEShapeType.Polyline, points);
+		            path.HideIcon();
+		            pathLayer.AddShape(path);
+		            map.SetMapView(points);
+		        }
+		    }
+
+		    function centerMap(lat, lon) {
+                map.SetCenter(new VELatLong(lat,lon));
+            }
+
+            function updateMapData(msg) {
+                window.external.UpdateMapData(msg);
+            }
+
+            function AddPoint(lat, lon) {
+                points.push(new VELatLong(lat,lon));
+            }
+
+            function ClearPoints() {
+                points = new Array();
+            }
+		</script>
+	</head>
+	<body onload="pageLoad()" style="margin:0px">
+	    <div id='myMap' style="position:relative; width:740px; height:586px;"></div>
+	</body>
+</html>

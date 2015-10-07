@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>GPS Sim</title>
+ <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3" type="text/javascript"></script>
+ <script type="text/javascript">
+  var map = null;
+
+  function LoadMap() {
+   
+   map = new VEMap("divMainMap");
+   
+   map.onLoadMap = function(){     
+      map.AttachEvent("onmousemove", GetLongLat); 
+   }
+   
+    map.LoadMap();
+  }
+
+  function GetLongLat(e) {   
+   var pixelPos = new VEPixel(e.mapX, e.mapY);
+   var convertedPixel = map.PixelToLatLong(pixelPos);
+   document.getElementById("tbLatitude").value = convertedPixel.Latitude;
+   document.getElementById("tbLongitude").value = convertedPixel.Longitude;   
+  }
+ </script>
+  
+</head>
+  
+<body onload="LoadMap();">
+ <div id="divMainMap" style="position: relative; width:750px; height:550px;"></div>
+<input id="tbLatitude" style="display:none"/>
+<input id="tbLongitude" style="display:none" />
+</body>
+</html>

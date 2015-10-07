@@ -1,0 +1,13 @@
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\ApplicationIcon.png
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\Background.png
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\GPSSim Consumer.dll
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\GPSSim Consumer.pdb
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\AppManifest.xaml
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\Bin\Debug\GPSSim_Consumer.xap
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\ResolveAssemblyReference.cache
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\App.g.cs
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\MainPage.g.cs
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\GPSSim Consumer.g.resources
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\GPSSim Consumer.dll
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\GPSSim Consumer.pdb
+c:\users\a a\documents\visual studio 2010\Projects\GPSSim Consumer\GPSSim Consumer\obj\Debug\XapCacheFile.xml

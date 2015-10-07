@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IGPSSim" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:8000/GPSSim/GPS%20Sim%20Service"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IGPSSim"
+                contract="ServiceReference1.IGPSSim" name="BasicHttpBinding_IGPSSim" />
+        </client>
+    </system.serviceModel>
+</configuration>
