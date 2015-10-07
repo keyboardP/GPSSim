@@ -1,5 +1,6 @@
 IF you have trouble getting the code to run, please email me (phone7@live.co.uk) or comment on my blog post:
 http://phone7.wordpress.com/2010/08/02/no-device-no-gps-no-matter-with-code/
+See it in action: https://github.com/keyboardP/GPSSim
 
 -You will have to change "Form1.cs" Line 71 - Change that path to your map.html file.
 -Run the service (winform) before your WP7 application
